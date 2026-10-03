@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rohith Chirra | Data Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Rohith Chirra, Data Science graduate skilled in Excel, SQL, Power BI and Python.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1220'/%3E%3Cpath d='M7 25L16 6l9 19M11 19h10' stroke='%237fb2e5' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="header" id="header">
+  <nav class="nav container" aria-label="Main">
+    <a href="#home" class="logo" aria-label="Rohith Chirra home">
+      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><path d="M7 34L20 6l13 28" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><ellipse cx="20" cy="25" rx="6" ry="2.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 25v4c0 1.2 2.7 2.2 6 2.2s6-1 6-2.2v-4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <span>rohith.chirra</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <img class="avatar" src="assets/profile.jpeg" alt="Photo of Rohith Chirra" width="132" height="132" onerror="this.style.display='none'">
+      <p class="mono tag">Data Science graduate, B.Tech 2026</p>
+      <h1>Rohith Chirra</h1>
+      <p class="role mono"><span id="typed"></span><span class="cursor">|</span></p>
+      <p class="lead">Excel, SQL, Power BI and Python, turning raw data into clear, decision-ready insights.</p>
+      <div class="actions">
+        <a class="btn primary" href="assets/Rohith_Chirra_Resume_Data_Analyst.docx" download><i class="fa-solid fa-download"></i> Download resume</a>
+        <a class="btn" href="#projects"><i class="fa-solid fa-database"></i> View projects</a>
+        <a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+      </div>
+    </div>
+    <div class="terminal" aria-label="Profile query result">
+      <div class="term-bar"><i></i><i></i><i></i><span class="mono">sql_console</span></div>
+      <pre class="mono" id="term"></pre>
+    </div>
+  </div>
+</section>
+
+<section id="summary" class="section"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-user"></i> Summary</h2>
+  <div class="card reveal">
+    <p>Data Science graduate (B.Tech, 2026) with hands-on experience in Excel, SQL, Power BI and Python. Built an interactive dashboard analysing 300,000 digital payment transactions using pivot tables, charts and slicers. Seeking an entry-level Data Analyst role to turn raw data into clear, decision-ready insights.</p>
+  </div>
+</div></section>
+
+<section id="skills" class="section alt"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-terminal"></i> Skills</h2>
+  <div class="grid two">
+    <div class="card reveal"><h3><i class="fa-solid fa-chart-column"></i> Analysis &amp; BI</h3><ul class="chips"><li>Excel</li><li>Pivot Tables</li><li>Slicers</li><li>Dashboards</li><li>Data Cleaning</li><li>Power BI</li></ul></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-database"></i> Databases</h3><ul class="chips"><li>SQL</li><li>MySQL</li></ul></div>
+    <div class="card reveal"><h3><i class="fa-brands fa-python"></i> Programming</h3><ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Scikit-learn</li><li>C</li></ul></div>
+    <div class="card reveal"><h3><i class="fa-solid fa-brain"></i> Data Science</h3><ul class="chips"><li>Exploratory data analysis</li><li>Data visualization</li><li>Supervised and unsupervised learning</li><li>Anomaly detection</li><li>Feature engineering</li><li>Model evaluation</li></ul></div>
+    <div class="card reveal wide"><h3><i class="fa-brands fa-github"></i> Tools</h3><ul class="chips"><li>Git</li><li>GitHub</li><li>VS Code</li></ul></div>
+  </div>
+</div></section>
+
+<section id="projects" class="section"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+  <div class="stack">
+    <article class="card project reveal">
+      <header><h3>Digital Payment Transactions Dashboard (Excel)</h3><span class="badge mono">Academic Project</span></header>
+      <ul>
+        <li>Prepared a 300,000-record digital payment dataset (with user details for 100,761 distinct users) by moving it from raw data to a cleaned data sheet in Excel.</li>
+        <li>Built 17 pivot tables and an interactive dashboard with 10 charts and 5 slicers (service type, month, age group, payment status, reason) for drill-down analysis.</li>
+        <li>Tracked key KPIs: 287,993 successful vs 12,007 failed transactions, a 96.0% success rate.</li>
+      </ul>
+    </article>
+    <article class="card project reveal">
+      <header><h3>Deep Anomaly Detection for Machine Condition Monitoring (Python, HuBERT)</h3><span class="badge mono">Team Project, 2025–26</span></header>
+      <ul>
+        <li>Worked in a team to build an acoustic fault-detection system that classifies machine sounds into 5 classes (normal, air leak, oil leak, idling, background noise).</li>
+        <li>Extracted audio features with Librosa (MFCC) and HuBERT embeddings; compared Logistic Regression, LDA and Random Forest using accuracy, precision, recall, F1 and confusion matrices.</li>
+        <li>Built a Tkinter desktop app with admin/user login to train models and predict faults from uploaded .wav files.</li>
+      </ul>
+    </article>
+    <article class="card project reveal">
+      <header><h3>TalentFlow: Corporate Training Management System (Python, Django)</h3><span class="badge mono">Mini Project, 2024–25</span></header>
+      <ul>
+        <li>Developed a Django web application for corporate training with user registration, login and a separate staff (admin) login with role-based access.</li>
+        <li>Designed Training and Enrollment models linked to users; admins add and delete courses, and users enroll with duplicate-enrollment checks.</li>
+      </ul>
+    </article>
+  </div>
+</div></section>
+
+<section id="education" class="section alt"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+  <div class="timeline">
+    <div class="card reveal"><span class="badge mono">2022 – 2026</span><h3>B.Tech in Data Science / Computer Science | CGPA: 7.3</h3><p>Vaagdevi Engineering College (JNTUH), Warangal, Telangana</p></div>
+    <div class="card reveal"><span class="badge mono">2020 – 2022</span><h3>Intermediate (MPC) | 86%</h3><p>Tejas Junior College, Hanamkonda, Telangana State Board</p></div>
+    <div class="card reveal"><span class="badge mono">2020</span><h3>SSC | 100%</h3><p>ZPHS, Chilpur, Board of Secondary Education, Telangana</p></div>
+  </div>
+</div></section>
+
+<section id="certifications" class="section"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-certificate"></i> Certifications</h2>
+  <div class="grid two">
+    <div class="card reveal cert"><i class="fa-solid fa-shield-halved"></i><p>Cyber Security Course – IBM SkillsBuild</p></div>
+    <div class="card reveal cert"><i class="fa-solid fa-code"></i><p>Python Full Stack Development Course</p></div>
+  </div>
+</div></section>
+
+<section id="testimonials" class="section alt"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-quote-left"></i> Testimonials</h2>
+  <!-- Replace the sample text below with real feedback (edit the data-* free text in each figure). -->
+  <div class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Testimonials">
+    <div class="track" id="track">
+      <figure class="slide"><blockquote>"Rohith worked carefully on the data and feature extraction for our team project. He explained his results clearly and was easy to work with."
+</blockquote><figcaption><strong>Sony Lone</strong><span class="mono"> project Team Member</span></figcaption></figure>
+      <figure class="slide"><blockquote>"Rohith picked up new tools quickly and finished his project work on time. He asked good questions and explained his dashboard results in a simple way.</blockquote><figcaption><strong>Dr.Sharmila</strong><span class="mono">Project Guide</span></figcaption></figure>
+    </div>
+    <div class="ctrl">
+      <button id="prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="dots" id="dots"></div>
+      <button id="next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="section"><div class="container">
+  <h2 class="mono"><i class="fa-solid fa-address-card"></i> Contact</h2>
+  <div class="grid two">
+    <div class="card reveal contact"><i class="fa-solid fa-location-dot"></i><p>Chilpur, Telangana, India</p></div>
+    <a class="card reveal contact" href="tel:+919550372603"><i class="fa-solid fa-phone"></i><p>+91-9550372603</p></a>
+    <a class="card reveal contact" href="mailto:chirrarohithgoud52@gmail.com"><i class="fa-solid fa-envelope"></i><p>chirrarohithgoud52@gmail.com</p></a>
+    <a class="card reveal contact" href="https://github.com/Rohithere2k4" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i><p>github.com/Rohithere2k4</p></a>
+    <a class="card reveal contact wide" href="https://www.linkedin.com/in/chirra-rohith-0671b5397/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><p>linkedin.com/in/chirra-rohith-0671b5397</p></a>
+  </div>
+  <p class="center"><a class="btn primary" href="assets/Rohith_Chirra_Resume_Data_Analyst.docx" download><i class="fa-solid fa-download"></i> Download resume</a></p>
+</div></section>
+</main>
+
+<footer class="footer">
+  <div class="container foot">
+    <p class="mono">Rohith Chirra | Data Analyst</p>
+    <p>&copy; <span id="year"></span> Rohith Chirra. All rights reserved.</p>
+    <a href="#home" class="btn top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
